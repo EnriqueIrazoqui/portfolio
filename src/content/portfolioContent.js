@@ -109,7 +109,7 @@ export const portfolioContent = {
         {
           role: "Backend / Full Stack Developer",
           company: "Distribuidora Aphelios",
-          period: "Current",
+          period: "Abr 2024 - Current",
           description:
             "Working on the development and evolution of an internal business platform used for inventory management, MRP processes, order processing, and integrations with third-party services such as Mercado Libre and other sales channels.",
           highlights: [
@@ -124,7 +124,7 @@ export const portfolioContent = {
         {
           role: "Full Stack Developer",
           company: "Enterprise Systems (Carsol)",
-          period: "Previous Experience",
+          period: "May 2024 - Ago 2025",
           description:
             "Worked on enterprise-level systems focused on inventory management, backend improvements, and integrations, contributing to real business operations and production environments.",
           highlights: [
@@ -133,6 +133,19 @@ export const portfolioContent = {
             "CRUD systems, validations, and business logic implementation",
             "Database optimization and query performance improvements",
             "Maintenance and improvements in production environments",
+          ],
+        },
+        {
+          role: "Web Development Intern",
+          company: "Tecnológico Superior de Jalisco",
+          period: "Aug 2022 – May 2023",
+          description:
+            "Contributed to the backend development of a vehicle management system aimed at replacing manual processes with a digital solution.",
+          highlights: [
+            "Developed a microservice for vehicle registration and management",
+            "Implemented backend logic using Node.js and Express",
+            "Designed and managed relational databases using MariaDB",
+            "Improved data organization and accessibility",
           ],
         },
       ],
@@ -206,7 +219,7 @@ export const portfolioContent = {
       stats: {
         experience: "2+ años",
         focus: "Desarrollo Backend",
-        english: "Nivel B2",
+        english: "Nivel B1",
         cloud: "AWS / Render / Netlify",
       },
     },
@@ -282,7 +295,7 @@ export const portfolioContent = {
         {
           role: "Desarrollador Backend / Full Stack",
           company: "Distribuidora Aphelios",
-          period: "Actual",
+          period: "Abr 2024 - Actual",
           description:
             "Trabajo en el desarrollo y evolución de una plataforma empresarial interna utilizada para gestión de inventario, procesos MRP, procesamiento de órdenes e integraciones con servicios de terceros como Mercado Libre y otros canales de venta.",
           highlights: [
@@ -297,7 +310,7 @@ export const portfolioContent = {
         {
           role: "Desarrollador Full Stack",
           company: "Enterprise Systems (Carsol)",
-          period: "Experiencia previa",
+          period: "May 2024 - Ago 2025",
           description:
             "Trabajé en sistemas empresariales enfocados en gestión de inventario, mejoras backend e integraciones, contribuyendo a operaciones reales y entornos productivos.",
           highlights: [
@@ -306,6 +319,19 @@ export const portfolioContent = {
             "CRUDs, validaciones e implementación de lógica de negocio",
             "Optimización de bases de datos y rendimiento de consultas",
             "Mantenimiento y mejoras en entornos productivos",
+          ],
+        },
+        {
+          role: "Becario de Desarrollo Web",
+          company: "Tecnológico Superior de Jalisco",
+          period: "Ago 2022 – May 2023",
+          description:
+            "Participé en el desarrollo backend de un sistema de control vehicular enfocado en digitalizar el registro y gestión de vehículos, reemplazando procesos manuales.",
+          highlights: [
+            "Desarrollo de un microservicio para el registro y gestión de vehículos",
+            "Implementación de lógica backend con Node.js y Express",
+            "Diseño y manejo de base de datos con MariaDB",
+            "Optimización en el acceso y organización de la información",
           ],
         },
       ],
