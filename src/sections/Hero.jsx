@@ -22,7 +22,8 @@ function Hero({ content }) {
         minHeight: "100vh",
         display: "flex",
         alignItems: "center",
-        scrollMarginTop: "88px",
+        scrollMarginTop: "96px",
+        overflow: "hidden",
         background:
           "radial-gradient(circle at top, rgba(25, 118, 210, 0.18) 0%, rgba(10, 16, 32, 1) 35%, rgba(5, 8, 20, 1) 100%)",
       }}
@@ -30,9 +31,10 @@ function Hero({ content }) {
       <Container maxWidth="lg">
         <Box
           sx={{
+            px: { xs: 1, sm: 0 },
             display: "grid",
             gridTemplateColumns: { xs: "1fr", md: "1.2fr 0.8fr" },
-            gap: 4,
+            gap: { xs: 4, md: 5 },
             alignItems: "center",
           }}
         >
@@ -48,6 +50,9 @@ function Hero({ content }) {
                   sx={{
                     fontWeight: 800,
                     letterSpacing: 0.5,
+                    fontSize: { xs: "2.4rem", sm: "2.8rem", md: "3.4rem" },
+                    lineHeight: 1.08,
+                    wordBreak: "break-word",
                   }}
                 >
                   {content.hero.name}
@@ -59,6 +64,8 @@ function Hero({ content }) {
                     color: "primary.main",
                     letterSpacing: 2,
                     textTransform: "uppercase",
+                    display: "inline-block",
+                    mt: 1,
                   }}
                 >
                   {content.hero.alias}
@@ -69,6 +76,13 @@ function Hero({ content }) {
                 label={content.hero.chip}
                 sx={{
                   alignSelf: "flex-start",
+                  maxWidth: "100%",
+                  height: "auto",
+                  "& .MuiChip-label": {
+                    display: "block",
+                    whiteSpace: "normal",
+                    py: 0.8,
+                  },
                   backgroundColor: "rgba(56, 189, 248, 0.12)",
                   color: "#BAE6FD",
                   border: "1px solid rgba(56, 189, 248, 0.22)",
@@ -80,9 +94,11 @@ function Hero({ content }) {
                 variant="h2"
                 sx={{
                   fontWeight: 800,
-                  lineHeight: 1.1,
-                  fontSize: { xs: "2.5rem", md: "4.3rem" },
+                  lineHeight: 1.08,
+                  fontSize: { xs: "1.7rem", sm: "2.3rem", md: "4.3rem" },
                   maxWidth: "900px",
+                  wordBreak: "break-word",
+                  overflowWrap: "anywhere",
                 }}
               >
                 {content.hero.title}
@@ -95,12 +111,17 @@ function Hero({ content }) {
                   maxWidth: "760px",
                   lineHeight: 1.8,
                   fontWeight: 400,
+                  fontSize: { xs: "1rem", sm: "1.05rem", md: "1.2rem" },
                 }}
               >
                 {content.hero.description}
               </Typography>
 
-              <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
+              <Stack
+                direction={{ xs: "column", sm: "row" }}
+                spacing={2}
+                sx={{ width: "100%" }}
+              >
                 <Button
                   variant="contained"
                   size="large"
@@ -111,6 +132,7 @@ function Hero({ content }) {
                     fontWeight: 700,
                     borderRadius: "14px",
                     textTransform: "none",
+                    width: { xs: "100%", sm: "auto" },
                   }}
                 >
                   {content.hero.primaryButton}
@@ -128,6 +150,7 @@ function Hero({ content }) {
                     textTransform: "none",
                     borderColor: "rgba(255,255,255,0.15)",
                     color: "text.primary",
+                    width: { xs: "100%", sm: "auto" },
                   }}
                 >
                   {content.hero.secondaryButton}
@@ -172,7 +195,7 @@ function Hero({ content }) {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
             sx={{
-              p: 3,
+              p: { xs: 2.5, sm: 3 },
               borderRadius: "24px",
               background: "rgba(255,255,255,0.04)",
               border: "1px solid rgba(255,255,255,0.08)",
@@ -192,8 +215,8 @@ function Hero({ content }) {
                 src={profile}
                 alt={content.hero.name}
                 sx={{
-                  width: 140,
-                  height: 140,
+                  width: { xs: 120, sm: 140 },
+                  height: { xs: 120, sm: 140 },
                   borderRadius: "50%",
                   objectFit: "cover",
                   border: "2px solid rgba(56, 189, 248, 0.4)",
@@ -201,18 +224,39 @@ function Hero({ content }) {
                 }}
               />
 
-              <Typography variant="h6" sx={{ fontWeight: 700 }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: 700,
+                  fontSize: { xs: "1.4rem", sm: "1.6rem" },
+                  wordBreak: "break-word",
+                }}
+              >
                 {content.hero.name}
               </Typography>
 
               <Typography
                 variant="body2"
-                sx={{ color: "primary.main", fontWeight: 600 }}
+                sx={{
+                  color: "primary.main",
+                  fontWeight: 600,
+                  lineHeight: 1.7,
+                  fontSize: { xs: "0.95rem", sm: "1rem" },
+                  maxWidth: "100%",
+                  wordBreak: "break-word",
+                  overflowWrap: "anywhere",
+                }}
               >
                 {content.hero.cardTitle}
               </Typography>
 
-              <Typography variant="body2" sx={{ color: "text.secondary" }}>
+              <Typography
+                variant="body2"
+                sx={{
+                  color: "text.secondary",
+                  fontSize: { xs: "0.95rem", sm: "1rem" },
+                }}
+              >
                 {content.hero.cardSubtitle}
               </Typography>
             </Stack>

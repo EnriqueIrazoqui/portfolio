@@ -183,14 +183,14 @@ export const portfolioContent = {
     hero: {
       name: "Enrique Irazoqui Ruelas",
       alias: "Yata Garasu",
-      chip: "Ingeniero en Sistemas Computacionales (Cédula Profesional) · Inglés B1",
+      chip: "Ingeniero en Sistemas · Inglés B1",
       title:
         "Desarrollador Backend / Full Stack enfocado en sistemas escalables y arquitecturas modernas",
       description:
         "Desarrollo APIs, background jobs, flujos de automatización y aplicaciones escalables. También trabajo con integraciones de Mercado Libre y Odoo, despliegues en la nube y soluciones de software orientadas al negocio.",
       primaryButton: "Ver proyectos",
       secondaryButton: "Contáctame",
-      cardTitle: "Ingeniero en Sistemas Computacionales (Cédula Profesional)",
+      cardTitle: "Ingeniero en Sistemas Computacionales",
       cardSubtitle: "Backend · Full Stack · Inglés B1",
     },
     about: {
